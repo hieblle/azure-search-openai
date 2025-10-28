@@ -1,105 +1,66 @@
-.container {
-    flex: 1;
+.askContainer {
     display: flex;
+    flex: 1;
     flex-direction: column;
     margin-top: 1rem;
 }
 
-.chatRoot {
-    flex: 1;
-    display: flex;
-}
-
-.chatContainer {
-    flex: 1;
+.askTopSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-height: calc(100vh - 10rem);
 }
 
-.chatEmptyState {
-    flex-grow: 1;
+.askBottomSection {
     display: flex;
-    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    max-height: 64rem;
-    padding-top: 1rem;
+    align-content: flex-start;
+    width: 100%;
+    margin-top: 1.25rem;
 }
 
-.chatEmptyStateTitle {
+.askTitle {
     font-size: 2.75rem;
     font-weight: 600;
     margin-top: 0;
-    margin-bottom: 1.875rem;
 }
 
-.chatEmptyStateSubtitle {
-    font-weight: 600;
-    margin-bottom: 0.625rem;
-}
-
-.chatMessageStream {
-    flex-grow: 1;
-    max-height: 64rem;
-    width: 100%;
-    overflow-y: auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    resize: horizontal;
-    min-width: 50vw;
-}
-
-.chatMessageGpt {
-    margin-bottom: 1.25rem;
-    max-width: 100%;
-    display: flex;
-}
-
-.chatMessageGptMinWidth {
-    max-width: 31.25rem;
-    margin-bottom: 1.25rem;
-}
-
-.chatInput {
-    position: sticky;
-    bottom: 0;
-    flex: 0 0 6.25rem;
+.askQuestionInput {
     padding: 1rem;
     width: 100%;
     max-width: 64.25rem;
-    background: #f2f2f2;
 }
 
-.chatAnalysisPanel {
-    flex: 1;
-    overflow-y: auto;
-    max-height: 85vh;
+.askAnswerContainer {
+    max-width: 50rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.askAnalysisPanel {
+    width: 37.5rem;
     margin-left: 1.25rem;
-    margin-right: 1.25rem;
 }
 
-.chatSettingsSeparator {
+.askSettingsSeparator {
     display: flex;
     flex-direction: column;
     margin-top: 0.9375rem;
 }
 
-.loadingLogo {
-    font-size: 1.75rem;
-}
-
-.commandsSplitContainer {
-    display: flex;
-    justify-content: space-between;
+.settingsButton {
+    align-self: flex-end;
+    margin-right: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 .commandsContainer {
     display: flex;
-    padding-left: 1rem;
+    padding-left: 9rem;
     padding-right: 1rem;
     align-self: flex-end;
 }
@@ -109,38 +70,18 @@
 }
 
 @media (min-width: 992px) {
-    .container {
-        margin-top: 1.25rem;
-    }
-
-    .chatEmptyState {
-        padding-top: 3.75rem;
-    }
-
-    .chatEmptyStateTitle {
+    .askTitle {
         font-size: 4rem;
-    }
-
-    .chatInput {
-        padding: 0.75rem 1.5rem 1.5rem;
-    }
-
-    .commandsSplitContainer {
-        padding-left: 1rem;
+        margin-top: 8.125rem;
     }
 
     .commandsContainer {
-        padding-left: 0rem;
-        padding-right: 0rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .commandButton {
         margin-right: 1.25rem;
         margin-bottom: 1.25rem;
-    }
-
-    .chatMessageGpt {
-        max-width: 80%;
-        min-width: 31.25rem;
     }
 }
